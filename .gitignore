@@ -22,3 +22,6 @@
 # Ignore Gemfile.lock
 /Gemfile.lock
 .gitconfig
+
+# Ignore the bundle conponents directory
+/vendor/bundle
