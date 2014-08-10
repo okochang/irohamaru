@@ -186,4 +186,4 @@ end
 # Syntax Highlight
 ###
 
-activate :syntax, line_numbers: true
+activate :syntax
