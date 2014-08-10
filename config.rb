@@ -110,7 +110,7 @@ set :site_description, '勉強したメモなどなどを公開しています'
 # Select the theme from bootswatch.com.
 # If false, you can get plain bootstrap style.
 # set :theme_name, 'flatly'
-set :theme_name, false
+set :theme_name, 'superhero'
 set :@analytics_account, "UA-53667787-1"
 @analytics_account = true
 
