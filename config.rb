@@ -111,7 +111,7 @@ set :site_description, '勉強したメモなどなどを公開しています'
 # If false, you can get plain bootstrap style.
 # set :theme_name, 'flatly'
 set :theme_name, false
-set @analytics_account, "UA-53667787-1"
+set :@analytics_account, "UA-53667787-1"
 @analytics_account = true
 
 # Asset Settings
