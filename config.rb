@@ -168,11 +168,16 @@ end
 # Deploy settings
 ###
 
-# ftp deployment configuration. 
-# activate :deploy do |deploy|
-#   deploy.method = :ftp
-#   deploy.host = "ftp-host"
-#   deploy.user = "ftp-user"
-#   deploy.password = "ftp-password"
-#   deploy.path = "ftp-path"
-# end
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket = 'blog.okochang.com'
+  s3_sync.region = 'ap-northeast-1'
+  s3_sync.aws_access_key_id = ENV['OKOCHANG_AWS_ACCESS_KEY_ID']
+  s3_sync.aws_secret_access_key = ENV['OKOCHANG_AWS_SECRET_ACCESS_KEY']
+  s3_sync.delete = false
+  s3_sync.after_build = false
+  s3_sync.prefer_gzip = true
+  s3_sync.path_style = true
+  s3_sync.reduced_redundancy_storage = false
+  s3_sync.acl = 'public-read'
+  s3_sync.encryption = false
+end
