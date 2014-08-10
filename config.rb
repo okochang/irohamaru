@@ -181,3 +181,9 @@ activate :s3_sync do |s3_sync|
   s3_sync.acl = 'public-read'
   s3_sync.encryption = false
 end
+
+###
+# Syntax Highlight
+###
+
+activate :syntax, line_numbers: true
