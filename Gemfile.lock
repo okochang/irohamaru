@@ -11,6 +11,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+    colorize (0.7.3)
     compass (0.12.5)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
@@ -19,21 +20,49 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
     eventmachine (1.0.3)
+    excon (0.39.4)
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.9.3)
+    fog (1.23.0)
+      fog-brightbox
+      fog-core (~> 1.23)
+      fog-json
+      fog-softlayer
+      ipaddress (~> 0.5)
+      nokogiri (~> 1.5, >= 1.5.11)
+    fog-brightbox (0.2.0)
+      fog-core (~> 1.22)
+      fog-json
+      inflecto
+    fog-core (1.23.0)
+      builder
+      excon (~> 0.38)
+      formatador (~> 0.2)
+      mime-types
+      net-scp (~> 1.1)
+      net-ssh (>= 2.1.3)
+    fog-json (1.0.0)
+      multi_json (~> 1.0)
+    fog-softlayer (0.3.13)
+      fog-core
+      fog-json
+    formatador (0.2.5)
     fssm (0.2.10)
     haml (4.0.5)
       tilt
     hike (1.2.3)
     http_parser.rb (0.5.3)
     i18n (0.6.9)
+    inflecto (0.0.2)
+    ipaddress (0.8.0)
     json (1.8.1)
     kramdown (1.3.3)
     listen (1.3.1)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
+    map (6.5.4)
     middleman (3.2.2)
       coffee-script (~> 2.2.0)
       compass (>= 0.12.2)
@@ -66,20 +95,35 @@ GEM
       middleman-core (>= 3.0.2)
       multi_json (~> 1.0)
       rack-livereload
+    middleman-s3_sync (3.0.31)
+      colorize
+      fog (>= 1.10.1)
+      map
+      middleman-core (>= 3.0.0)
+      pmap
+      ruby-progressbar
+      unf
     middleman-sprockets (3.3.2)
       middleman-core (>= 3.2)
       sprockets (~> 2.2)
       sprockets-helpers (~> 1.1.0)
       sprockets-sass (~> 1.0.0)
+    middleman-syntax (2.0.0)
+      middleman-core (~> 3.2)
+      rouge (~> 1.0)
     middleman-target (0.0.6)
       middleman (>= 3.0)
+    mime-types (2.3)
     mini_portile (0.5.3)
     multi_json (1.9.2)
+    net-scp (1.2.1)
+      net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.8.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
+    pmap (1.0.1)
     ptools (1.2.4)
     rack (1.5.2)
     rack-livereload (0.3.15)
@@ -92,6 +136,8 @@ GEM
     rb-kqueue (0.2.2)
       ffi (>= 0.5.0)
     redcarpet (3.1.1)
+    rouge (1.6.1)
+    ruby-progressbar (1.5.1)
     sass (3.2.19)
     slim (2.0.2)
       temple (~> 0.6.6)
@@ -115,6 +161,9 @@ GEM
     uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.6)
 
 PLATFORMS
   ruby
@@ -125,6 +174,8 @@ DEPENDENCIES
   middleman-blog (~> 3.5.1)
   middleman-deploy (~> 0.1.4)
   middleman-livereload (~> 3.1.0)
+  middleman-s3_sync
+  middleman-syntax
   middleman-target (~> 0.0.6)
   nokogiri (~> 1.6.1)
   redcarpet (~> 3.1.1)
