@@ -12,3 +12,15 @@ img {
   max-width: 100%;
   border: 0;
 }
+
+.share {
+  overflow: hidden;
+}
+.share ul {
+  padding: 0;
+}
+.share li {
+  float: left;
+  display: inline-block;
+  margin-right: 4px;
+}
