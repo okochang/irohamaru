@@ -105,7 +105,7 @@ activate :livereload
 # Set site setting, used in helpers / sitemap.xml / feed.xml.
 set :site_url, 'http://blog.okochang.com'
 set :site_author, '@oko_chang'
-set :site_title, 'okochang's blog'
+set :site_title, 'okochang\'s blog'
 set :site_description, '勉強したメモなどなどを公開しています'
 # Select the theme from bootswatch.com.
 # If false, you can get plain bootstrap style.
