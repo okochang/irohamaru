@@ -103,16 +103,16 @@ activate :livereload
 # Site Settings
 ###
 # Set site setting, used in helpers / sitemap.xml / feed.xml.
-set :site_url, 'http://blog.url.com'
-set :site_author, 'Blog author'
-set :site_title, 'Blog title'
-set :site_description, 'Blog description'
+set :site_url, 'http://blog.okochang.com'
+set :site_author, '@oko_chang'
+set :site_title, 'okochang's blog'
+set :site_description, '勉強したメモなどなどを公開しています'
 # Select the theme from bootswatch.com.
 # If false, you can get plain bootstrap style.
 # set :theme_name, 'flatly'
 set :theme_name, false
-# set @analytics_account, like "XX-12345678-9"
-@analytics_account = false
+set @analytics_account, "UA-53667787-1"
+@analytics_account = true
 
 # Asset Settings
 set :css_dir, 'css'
