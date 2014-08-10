@@ -10,6 +10,9 @@ tags: sample
 
 ## スクリプト
 
-```
+```ruby
 puts "Hello World"
+def my_cool_method(message)
+  puts message
+end
 ```
