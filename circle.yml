@@ -4,10 +4,6 @@ machine:
   timezone:
     Asia/Tokyo
 
-  ruby:
-    version:
-      2.1.2p95
-
 ## 依存関係の設定
 dependencies:
 
