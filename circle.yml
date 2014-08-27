@@ -12,7 +12,7 @@ machine:
 dependencies:
 
     override:
-      - npm -install -g bower
+      - npm install -g bower
 
 ## デプロイの設定
 
