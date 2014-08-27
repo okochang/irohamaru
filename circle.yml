@@ -1,0 +1,25 @@
+## テストマシンのカスタマイズ
+machine:
+
+  timezone:
+    Asia/Tokyo
+
+  ruby:
+    version:
+      2.1.2p95
+
+## 依存関係の設定
+dependencies:
+
+    override:
+      - npm -install -g bower
+
+## デプロイの設定
+
+deployment:
+
+  production:
+    branch: master
+    commands:
+      - bundle exec middleman build
+      - buncle exec middleman s3_sync
