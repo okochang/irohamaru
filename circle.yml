@@ -13,6 +13,7 @@ dependencies:
 
     override:
       - npm install -g bower
+      - bundle install --path=vendor/bundle
 
 ## デプロイの設定
 
