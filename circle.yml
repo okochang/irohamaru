@@ -13,6 +13,7 @@ machine:
 dependencies:
 
     override:
+      - sudo apt-get install nodejs
       - npm install -g bower
       - bundle install --path=vendor/bundle
 
