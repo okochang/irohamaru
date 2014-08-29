@@ -1,22 +1,22 @@
-## テストマシンのカスタマイズ
 machine:
-
   timezone:
     Asia/Tokyo
+  ruby:
+    version:
+      2.1.2
 
-## 依存関係の設定
 dependencies:
+  override:
+    - bundle install --path=vendor/bundle
+    - npm install -g bower
+    - bower install
 
-    override:
-      - npm install -g bower
-      - bundle install --path=vendor/bundle
-
-## デプロイの設定
+test:
+  override:
+    - bundle exec middleman build
 
 deployment:
-
   production:
     branch: master
     commands:
-      - bundle exec middleman build
-      - buncle exec middleman s3_sync
+      - bundle exec middleman s3_sync
