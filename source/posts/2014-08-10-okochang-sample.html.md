@@ -16,3 +16,10 @@ def my_cool_method(message)
   puts message
 end
 ```
+
+## コマンドライン手順
+
+```
+$ echo "Hello World"
+$ ping google.co.jp
+```
