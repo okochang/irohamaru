@@ -16,7 +16,6 @@ html
     = partial "partials/header"
     .container
       .row
-        = partial "partials/sidebar"
         div.col-lg-9.col-md-9
           - unless current_article.nil?
             h1
@@ -68,4 +67,5 @@ html
             p.text-center
               | 2014 
               = link_to "#{site_title}", "/"          
+        = partial "partials/sidebar"
     = javascript_include_tag  "all"
